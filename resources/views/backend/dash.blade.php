@@ -1,4 +1,4 @@
-@extends('layouts.app_dashboard')
+@extends('backend.master')
 @section('content')
 <!-- App hero header starts -->
 					<div class="app-hero-header">

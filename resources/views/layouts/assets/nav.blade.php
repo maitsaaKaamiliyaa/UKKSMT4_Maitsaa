@@ -17,7 +17,7 @@
 						<!-- App brand sm start -->
 						<div class="app-brand-sm d-md-none d-sm-block">
 							<a href="index.html">
-								<img src="assets/images/logo-sm.svg" class="logo" alt="Bootstrap Gallery">
+								<img src="{{ asset ('../assetsa/images/logo-sm.svg') }}" class="logo" alt="Bootstrap Gallery">
 							</a>
 						</div>
 						<!-- App brand sm end -->
@@ -45,7 +45,7 @@
 									<!-- Row start -->
 									<div class="d-flex gap-2 m-2">
 										<a href="javascript:void(0)" class="g-col-4 p-2 border rounded-2">
-											<img src="assets/images/brand-behance.svg" class="img-3x" alt="Admin Themes" />
+											<img src="{{ asset ('../assetsa/images/brand-behance.svg')}}" class="img-3x" alt="Admin Themes" />
 										</a>
 										<a href="javascript:void(0)" class="g-col-4 p-2 border rounded-2">
 											<img src="assets/images/brand-gatsby.svg" class="img-3x" alt="Admin Themes" />
@@ -108,14 +108,14 @@
 								<a id="userSettings" class="dropdown-toggle d-flex py-2 align-items-center text-decoration-none"
 									href="#!" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 									<span class="d-none d-md-block me-2">Harriet Bradford</span>
-									<img src="assets/images/user.png" class="rounded-circle img-3x" alt="Bootstrap Gallery" />
+									<img src="{{ asset ('../assetsa/images/user.png') }}" class="rounded-circle img-3x" alt="Bootstrap Gallery" />
 								</a>
 								<div class="dropdown-menu dropdown-menu-end shadow">
 									<a class="dropdown-item d-flex align-items-center" href="profile.html"><i
 											class="bi bi-person fs-4 me-2"></i>Profile</a>
 									<a class="dropdown-item d-flex align-items-center" href="settings.html"><i
 											class="bi bi-gear fs-4 me-2"></i>Account Settings</a>
-									<a class="dropdown-item d-flex align-items-center" href="login.html"><i
+									<a class="dropdown-item d-flex align-items-center" href="/logout"><i
 											class="bi bi-escape fs-4 me-2"></i>Logout</a>
 								</div>
 							</div>
@@ -125,10 +125,6 @@
 					</div>
 					<!-- App header ends -->
 
-					<!-- App footer start -->
-					<div class="app-footer">
-						<span>© Bootstrap Gallery 2023</span>
-					</div>
-					<!-- App footer end -->
+					
 
 				

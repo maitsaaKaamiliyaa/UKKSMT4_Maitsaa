@@ -1,6 +1,5 @@
 <?php
 
-use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -12,11 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        User::create([
-            'name' => 'maitsaa',
-            'email' => 'maitsaa@gmail.com',
-            'password' => bcrypt('12345678')
-        ]);
+        Schema::create('saldos', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger("saldo");
+            $table->unsignedInteger("reference_id");
+            $table->string("reference_type");
+            $table->timestamps();
+        });
     }
 
     /**
@@ -24,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('user');
+        Schema::dropIfExists('saldos');
     }
 };

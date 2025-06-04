@@ -1,3 +1,10 @@
+@extends('backend.master')
+
+@section('title')
+    <title>Login | Aplikasi</title>
+@endsection
+
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,8 +33,7 @@
 	<body>
 		<!-- Container start -->
 		<div class="container">
-@if ($errors->any())
-@endif			<div class="row justify-content-center">
+			<div class="row justify-content-center">
 				<div class="col-xl-4 col-lg-5 col-sm-6 col-12">
 					<form class="my-5" method="post" action="{{ route('login.store') }}">
 						@csrf
@@ -80,3 +86,4 @@
 	</body>
 
 </html>
+@endsection
